@@ -1,0 +1,121 @@
+{
+  "ReRoutes": [
+
+    {
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 0,
+      "DownstreamHost": "forecastingapi-authentication.azurewebsites.net",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-authentication.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 0,
+      "DownstreamHost": "forecastingapi-authentication.azurewebsites.net",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-authentication.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/authenticate",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forecasting",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 0,
+      "DownstreamHost": "forecastingapi-forecasting.azurewebsites.net",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-forecasting.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/forecasting",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forecasting/uploadInfo",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "forecastingapi-forecasting.azurewebsites.net",
+      "DownstreamPort": 0,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-forecasting.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/forecasting/uploadInfo",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forecasting/uploadFiles",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "forecastingapi-forecasting.azurewebsites.net",
+      "DownstreamPort": 0,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-forecasting.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/forecasting/uploadFiles",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forecasting/getforecastingdetails",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "forecastingapi-forecasting.azurewebsites.net",
+      "DownstreamPort": 0,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-forecasting.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/forecasting/getforecastingdetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forecasting/getforecastingdetailsexcel",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "forecastingapi-forecasting.azurewebsites.net",
+      "DownstreamPort": 0,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-forecasting.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/forecasting/getforecastingdetailsexcel",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/billing/getbillingdetails",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "forecastingapi-billing.azurewebsites.net",
+      "DownstreamPort": 0,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "forecastingapi-billing.azurewebsites.net",
+          "Port": 0
+        }
+      ],
+      "UpstreamPathTemplate": "/billing/getbillingdetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://forecastingbilling.azurewebsites.net/"
+  }
+}

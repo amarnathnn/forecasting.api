@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ps.cts.billing:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  ps.cts.billing:
+    image: ${DOCKER_REGISTRY-}psctsbilling
+    build:
+      context: .
+      dockerfile: PS.CTS.Billing\Dockerfile
+  
+  ps.cts.forecasting:
+    image: ${DOCKER_REGISTRY-}psctsforecasting
+    build:
+      context: .
+      dockerfile: PS.CTS.Forecasting\Dockerfile
+
+  ps.cts.allocation:
+    image: ${DOCKER_REGISTRY-}psctsallocation
+    build:
+      context: .
+      dockerfile: PS.CTS.Allocation\Dockerfile
+
+  ps.cts.authentication:
+    image: ${DOCKER_REGISTRY-}psctsauthentication
+    build:
+      context: .
+      dockerfile: PS.CTS.Authentication\Dockerfile
+
+  ps.cts.invoice:
+    image: ${DOCKER_REGISTRY-}psctsinvoice
+    build:
+      context: .
+      dockerfile: PS.CTS.Invoice\Dockerfile
+
+  ps.cts.project:
+    image: ${DOCKER_REGISTRY-}psctsproject
+    build:
+      context: .
+      dockerfile: PS.CTS.Project\Dockerfile
+
+  ps.cts.user:
+    image: ${DOCKER_REGISTRY-}psctsuser
+    build:
+      context: .
+      dockerfile: PS.CTS.User\Dockerfile
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
