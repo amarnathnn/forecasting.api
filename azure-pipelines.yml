@@ -1,1 +1,8 @@
-
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    azureSubscription: 'Microsoft Azure Enterprise - CALIBER(8a9a4c1c-ea49-47af-a059-d790e9782847)'
+    azureContainerRegistry: '{"loginServer":"caliber.azurecr.io", "id" : "/subscriptions/8a9a4c1c-ea49-47af-a059-d790e9782847/resourceGroups/C/providers/Microsoft.ContainerRegistry/registries/caliber"}'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
+    dockerComposeCommand: '$ docker-compose up'
